@@ -1,0 +1,11 @@
+{
+  "googleProjectID": "GOOGLE_PROJECT_ID",
+  "dialogFlowSessionID":"DIALOGFLOW_SESSION_ID",
+  "dialogFlowSessionLanguageCode": "DIALOGFLOW_LANGUAGE_CODE",
+  "googleClientEmail": "GOOGLE_CLIENT_EMAIL",
+  "googlePrivateKey": {
+    "__name": "GOOGLE_PRIVATE_KEY",
+    "__format": "json"
+  },
+  "clientUrl": ""
+}
