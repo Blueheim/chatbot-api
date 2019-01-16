@@ -4,11 +4,15 @@ const cors = require('cors');
 const config = require('config');
 const app = express();
 
-app.use(cors({
-  origin: config.get('clientUrl')
-}));
+app.use(
+  cors({
+    origin: config.get('clientUrl'),
+  })
+);
 
-require('./init/logging')();
+if (process.env.NODE_ENV !== 'production') {
+  require('./init/logging')();
+}
 require('./init/routes')(app);
 require('./init/prod')(app);
 
